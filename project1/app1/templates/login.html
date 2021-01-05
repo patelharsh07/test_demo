@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}<title>login</title>{% endblock %}
+{% block content %}<div class="loginbox">
+<img src="./web/images/57508250-user-avatar-illustration-anonymous-sign-white-icon-on-red-background-.jpg" class="avatar">
+		<h1>Login</h1>
+		<form method="POST">
+			{{ form }}
+			{% csrf_token %}
+			<div id="click">
+				<input type="submit" value="Login" name="Login">
+			</div>
+			<a href="Signup.html">Don't have an account?click here!</a>
+		</form>
+		
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	{% endblock %}

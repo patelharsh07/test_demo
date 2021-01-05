@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+<?head>
+<body>
+	<form method="post">
+		{{ msg }}
+		{{ reg_form }}
+		{% csrf_token %}
+		<a href="{% url 'login' %}">Already have Account</a>
+		<input type="submit" name="Register">
+	</form>
+
+</body>
+</html>
